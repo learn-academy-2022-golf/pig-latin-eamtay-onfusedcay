@@ -8,9 +8,22 @@ const App = () => {
     "apple through queen squeal fry fluent"
   );
   const [inputTranslated, setInputTranslated] = useState("");
-
+// created variables for words that will end in "ay" and "way"
+// We want to iterate amongst each word and call upon the appropriate function
+// 
   // ACTION ITEM: the "myPigLatinCodeHere" function is where you will put your logic to translate the sentence entered by the user into Pig Latin
   const myPigLatinCodeHere = () => {
+    const wordAy = eachWord + "ay"
+    for (let index = 0; index < array.length; index++) {
+      const wordAy = array[index];
+      
+    }
+      if (eachWord.indexOf(vowelsArray[0] = true) {
+        return wordWay  }
+
+        const wordWay = eachWord + "way"
+
+  
     // NO MODIFICATION NEEDED: the variable "arrayOfUserInput" will contain the text input from the user split into an array of words
     const arrayOfUserInput = userInput.split(" ");
     console.log("arrayOfUserInput:", arrayOfUserInput);
@@ -33,6 +46,10 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
 
+      // Make the variables for "ay" and "way"
+
+       
+
       console.log(
         "number that is index of the first vowel in each word",
         eachWord.indexOf(vowelsArray[0])
@@ -40,7 +57,7 @@ const App = () => {
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord;
-    });
+      });
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ");
