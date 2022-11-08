@@ -8,22 +8,14 @@ const App = () => {
     "apple through queen squeal fry fluent"
   );
   const [inputTranslated, setInputTranslated] = useState("");
-// created variables for words that will end in "ay" and "way"
-// We want to iterate amongst each word and call upon the appropriate function
-// 
+  // created variables for words that will end in "ay" and "way"
+  // We want to iterate amongst each word and call upon the appropriate function
+  // looking for where "eachword" is defined..
+  //
   // ACTION ITEM: the "myPigLatinCodeHere" function is where you will put your logic to translate the sentence entered by the user into Pig Latin
+  // we are taking the array and looking at each word and applying the required const
+  //
   const myPigLatinCodeHere = () => {
-    const wordAy = eachWord + "ay"
-    for (let index = 0; index < array.length; index++) {
-      const wordAy = array[index];
-      
-    }
-      if (eachWord.indexOf(vowelsArray[0] = true) {
-        return wordWay  }
-
-        const wordWay = eachWord + "way"
-
-  
     // NO MODIFICATION NEEDED: the variable "arrayOfUserInput" will contain the text input from the user split into an array of words
     const arrayOfUserInput = userInput.split(" ");
     console.log("arrayOfUserInput:", arrayOfUserInput);
@@ -45,19 +37,30 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray);
 
       // ACTION ITEM: your Pig Latin logic goes here!
-
+      // input: apple
+      // output: appleway
+      // starts with vowel, so will add way
+      // identify how to tell the computer what is a vowel
+      //index 0 of apple is a
+      //index 0 of vowelsArray is also a
+      //utilize conditional statement to identify
+      // if the first letter of each word matches the first character of the vowelsArray
+      if (eachWord[0] === vowelsArray[0]) {
+        //return each word + the string of way
+        return eachWord + "way";
+      }
       // Make the variables for "ay" and "way"
-
-       
-
-      console.log(
-        "number that is index of the first vowel in each word",
-        eachWord.indexOf(vowelsArray[0])
-      );
-
+      //second conditional is qu
+      // must find if the first vowel is u and if it is see if there is a q in front of it
+      //by finding the index of u and checking if the constanant before u is q.
+      // if the q is before the u move evrything at the index of u and before it to the end of the string
+else if (eachWord.indexOf("u") === vowelsArray[0]  && eachWord.indexOf("q") === eachWord.indexOf("u") i[0] - 1 ){
+  return eachWord.splice()
+}
+     
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord;
-      });
+    });
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ");
